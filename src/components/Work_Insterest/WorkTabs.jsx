@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 import {
-  Database,
-  Brain,
-  Code,
-  BarChart,
-  Briefcase,
-  TrendingUp,
-  DollarSign,
-} from "lucide-react";
+  Users,
+  Target,
+  BarChart2,
+  BookOpen,
+  Layers,
+} from "lucide-react"; // Replace with desired icons
+import Market from "../../assets/Works/market.png";
+import Strategy from "../../assets/Works/Project.png";
+import Analytics from "../../assets/Works/marketing-analytics.png";
+import Brand from "../../assets/Works/Brand.png";
+import Leadership from "../../assets/Works/Leadership.png";
 import ProfilePic from "../../assets/images/Profile pic.jpeg"
 const WorkCard = ({ title,  description, icon, image }) => {
   return (
@@ -55,78 +58,58 @@ const WorkTabs = () => {
   const [activeTab, setActiveTab] = useState("data-science");
   const [isTransitioning, setIsTransitioning] = useState(false);
 
-  const areasOfExpertise = [
-    {
-      id: "data-science",
-      title: "Data Science & Analytics",
-      summary: "Transforming raw data into insights",
-      description:
-        "Transforming complex, unstructured data into actionable insights through data cleaning, exploration, modeling, and visualization. Enables organizations to make informed strategic decisions based on data trends, predictive models, and performance metrics.",
-      icon: <Database size={24} />,
-      color: "#3b82f6",
-       imageUrl:ProfilePic ,
-    },
-    {
-      id: "ai-ml",
-      title: "AI & ML Engineering",
-      summary: "Building intelligent applications",
-      description:
-        "Building intelligent applications that learn from data and adapt over time. Includes developing chatbots, recommendation engines, computer vision, and predictive analytics using algorithms that drive automation, efficiency, and innovation in business.",
-      icon: <Brain size={24} />,
-      color: "#8b5cf6",
-         imageUrl:ProfilePic ,
-    },
-    {
-      id: "product-analysis",
-      title: "Product / Feature Analysis",
-      summary: "Data-driven product insights",
-      description:
-        "Using data to evaluate product features, user behavior, and market trends. Helps businesses refine offerings, identify areas of improvement, and align development with user needs through A/B testing, funnel analysis, and usage metrics.",
-      icon: <Code size={24} />,
-      color: "#10b981",
-         imageUrl:ProfilePic ,
-    },
-    {
-      id: "statistics",
-      title: "Statistics & Decision Science",
-      summary: "Evidence-based decisions",
-      description:
-        "Employing statistical models and probability theory to interpret data patterns and uncertainty. Supports evidence-based decisions through hypothesis testing, regression, and optimization techniques to solve complex business problems.",
-      icon: <BarChart size={24} />,
-      color: "#f97316",
-         imageUrl:ProfilePic ,
-    },
-    {
-      id: "training",
-      title: "Training and Mentorship",
-      summary: "Upskilling and guidance",
-      description:
-        "Providing hands-on guidance, structured learning, and practical mentorship in data science and AI. Focused on upskilling individuals and teams, fostering collaboration, and nurturing talent to bridge the gap between theory and real-world applications.",
-      icon: <Briefcase size={24} />,
-      color: "#ef4444",
-         imageUrl:ProfilePic ,
-    },
-    {
-      id: "business-growth",
-      title: "Business Growth Analytics",
-      summary: "Strategic business growth",
-      description:
-        "Using KPIs, customer insights, and market trends to identify growth drivers. Empowers leadership with dashboards, cohort analysis, and forecasts that shape marketing, sales, and operational strategies to maximize profitability and scalability.",
-      icon: <TrendingUp size={24} />,
-      color: "#6366f1",
-         imageUrl:ProfilePic ,
-    },
-    {
-      id: "financial-analytics",
-      title: "Financial Analytics",
-      summary: "Financial performance insights",
-      description:
-        "Analyzing financial statements, trends, and ratios to assess company health. Supports budgeting, forecasting, and investment decisions by delivering accurate models that optimize cash flow, profitability, and risk management.",
-      icon: <DollarSign size={24} />,
-      color: "#22c55e",
-         imageUrl:ProfilePic ,
-    },
-  ];
+
+
+const areasOfExpertise = [
+  {
+    id: "customer-insights",
+    title: "Customer & Market Insights",
+    description:
+      "I’m deeply curious about people—what they need, how they think, and why they buy. I enjoy diving into qualitative interviews, surveys, and data analysis to explore everything from audience segmentation to sentiment trends.",
+    icon: <Users size={24} />,
+    color: "#3b82f6", // Blue
+    imageUrl: Market,
+  },
+  {
+    id: "product-strategy",
+    title: "Product Strategy & Go-to-Market",
+    description:
+      "I'm drawn to the process of building thoughtful, user-centered products. Defining MVPs, mapping roadmaps, and planning go-to-market strategies are areas where I love to contribute.",
+    icon: <Target size={24} />,
+    color: "#8b5cf6", // Purple
+    imageUrl: Strategy,
+  },
+  {
+    id: "marketing-analytics",
+    title: "Marketing Analytics & Experimentation",
+    description:
+      "Turning data into direction excites me. I enjoy analyzing campaign performance, running A/B tests, and using tools like SQL and Tableau to refine what works—and what doesn’t.",
+    icon: <BarChart2 size={24} />,
+    color: "#10b981", // Green
+    imageUrl: Analytics,
+  },
+  {
+    id: "brand-strategy",
+    title: "Brand & Content Strategy",
+    description:
+      "I’m passionate about roles that involve messaging, storytelling, and brand positioning. Whether crafting decks, building narratives, or launching campaigns, I aim to make every word purposeful.",
+    icon: <BookOpen size={24} />,
+    color: "#f97316", // Orange
+    imageUrl: Brand,
+  },
+  {
+    id: "leadership-management",
+    title: "Leadership & Program Management",
+    description:
+      "I find joy in leading teams and programs that bring people together. From managing $20K+ event budgets to growing a 35-member board, I thrive in environments where impact is shared and momentum is built collectively.",
+    icon: <Layers size={24} />,
+    color: "#ef4444", // Red
+    imageUrl: Leadership,
+  },
+];
+
+
+
 
   const handleTabChange = (tabId) => {
     if (tabId !== activeTab && !isTransitioning) {

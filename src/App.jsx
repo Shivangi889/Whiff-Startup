@@ -5,6 +5,7 @@ import MyStartUp from './pages/My StartUp';
 import Resume from './pages/Resume';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import ProjectGrid from './pages/Projects';
 
 const AboutUs = lazy(() => import('./pages/About Us'));
 
@@ -37,6 +38,7 @@ export default function App() {
         <Route path="/" element={<AboutUs />} />
         <Route path="/mystartup" element={<MyStartUp />} />
         <Route path="/resume" element={<Resume />} />
+        <Route path="/project" element={<ProjectGrid/>}/>
       </Routes>
     </Suspense>
     <Footer />
