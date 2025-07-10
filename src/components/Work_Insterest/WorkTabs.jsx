@@ -5,13 +5,14 @@ import {
   BarChart2,
   BookOpen,
   Layers,
-} from "lucide-react"; // Replace with desired icons
+} from "lucide-react"; 
 import Market from "../../assets/Works/market.png";
 import Strategy from "../../assets/Works/Project.png";
 import Analytics from "../../assets/Works/marketing-analytics.png";
 import Brand from "../../assets/Works/Brand.png";
 import Leadership from "../../assets/Works/Leadership.png";
-import ProfilePic from "../../assets/images/Profile pic.jpeg"
+
+
 const WorkCard = ({ title,  description, icon, image }) => {
   return (
   <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8 bg-white rounded-xl shadow-lg p-6 md:p-10 animate-fade-in">
@@ -57,8 +58,6 @@ const WorkCard = ({ title,  description, icon, image }) => {
 const WorkTabs = () => {
   const [activeTab, setActiveTab] = useState("data-science");
   const [isTransitioning, setIsTransitioning] = useState(false);
-
-
 
 const areasOfExpertise = [
   {

@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import WorkGrid from './WorkGrid';
 import WorkTabs from './WorkTabs';
 
 const Work = () => {
+
   useEffect(() => {
     const handleScroll = () => {
       const elements = document.querySelectorAll('.card-container');
@@ -24,7 +24,6 @@ const Work = () => {
     <div className="min-h-screen">
       <header
         className="relative min-h-[50vh] flex items-center justify-center px-4 py-4 bg-cover bg-center"
-       
       >
         <div className="absolute inset-0 "></div>
         <div className="relative z-10 text-center max-w-4xl mx-auto animate-fade-in bg-white p-10 ">
@@ -45,13 +44,6 @@ const Work = () => {
             <WorkTabs />
           </div>
         </section>
-
-        {/* <section className="py-16">
-          <div className="max-w-7xl mx-auto px-4">
-            <WorkTabs />
-          </div>
-        </section> */}
-
         <div className=" px-4 max-w-7xl mx-auto">
           <p className="text-center font-serif text-lg italic text-gray-500">
             Each of these areas represents my commitment to innovation and my belief
