@@ -22,7 +22,7 @@ function HeroSection({ onAboutClick }) {
                         Pooja Bhatia <br /><span className="">(She/Her)</span>
                     </h1>
                     <p className="text-lg text-black font-tenor-sans mt-2">Product and Brand Enthusiast</p>
-                    <div className="flex justify-center gap-6 mt-10 text-2xl cursor-pointer">
+                    <div className="flex justify-center gap-6 mt-10 text-2xl cursor-pointer sm:mb-0 mb-2">
                         <IoLogoGithub className="text-gray-800 hover:text-black hover:scale-110 transition duration-200" />
                         <FaLinkedin className="text-gray-800 hover:text-[#0A66C2] hover:scale-110 transition duration-200" />
                         <MdEmail className="text-gray-800 hover:text-red-500 hover:scale-110 transition duration-200" />
