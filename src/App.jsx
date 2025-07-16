@@ -1,4 +1,4 @@
-import { lazy, Suspense , useRef  } from 'react';
+import { lazy, Suspense, useRef } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ScrollToTop } from './utils/utils';
 import MyStartUp from './pages/My StartUp';
@@ -23,25 +23,25 @@ const LoadingFallback = () => (
 export default function App() {
 
   const aboutRef = useRef(null);
-  
-    const handleScrollToAbout = () => {
-      if (aboutRef.current) {
-        aboutRef.current.scrollIntoView({ behavior: 'smooth' });
-      }
-    };
+
+  const handleScrollToAbout = () => {
+    if (aboutRef.current) {
+      aboutRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <Router>
-    <ScrollToTop />
-   <Header onAboutClick={handleScrollToAbout} />
-    <Suspense fallback={<LoadingFallback />}>
-      <Routes>
-        <Route path="/" element={<AboutUs />} />
-        <Route path="/mystartup" element={<MyStartUp />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/project" element={<ProjectGrid/>}/>
-      </Routes>
-    </Suspense>
-    <Footer />
-  </Router>
+      <ScrollToTop />
+      <Header onAboutClick={handleScrollToAbout} />
+      <Suspense fallback={<LoadingFallback />}>
+        <Routes>
+          <Route path="/" element={<AboutUs />} />
+          <Route path="/mystartup" element={<MyStartUp />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/project" element={<ProjectGrid />} />
+        </Routes>
+      </Suspense>
+      <Footer />
+    </Router>
   );
 }
