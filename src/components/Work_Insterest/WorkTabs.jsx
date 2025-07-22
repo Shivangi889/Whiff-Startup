@@ -5,7 +5,7 @@ import Leadership  from "../../assets/Works/Leadership.png";
 import Market from "../../assets/Works/market.png";
 import Analytic from "../../assets/Works/marketing-analytics.png";
 import Project from "../../assets/Works/Project.png";
-const WorkCard = ({ title, description, icon, image }) => {
+const WorkCard = ({ title, description, icon, image ,tag}) => {
   return (
     <div className="max-w-6xl border  mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
       {/* Image Section */}
@@ -30,10 +30,10 @@ const WorkCard = ({ title, description, icon, image }) => {
         <p className="text-gray-600 mb-6 leading-relaxed">{description}</p>
 
         <div className="flex flex-wrap gap-2">
-          {["Analysis", "Research", "Innovation"].map((tag) => (
+          {tag.map((tag) => (
             <span
               key={tag}
-              className="px-3 py-1 text-xs font-medium bg-gray-100 text-gray-700 rounded-full"
+              className ="px-3 py-1 text-l font-medium bg-[#fff27d] text-gray-800 rounded-full"
             >
               {tag}
             </span>
@@ -53,35 +53,40 @@ const WorkTabs = () => {
       title: "Customer & Market Insights",
       description: "I'm deeply curious about people—what they need, how they think, and why they buy. I enjoy diving into qualitative interviews, surveys, and data analysis to explore everything from audience segmentation to sentiment trends.",
       icon: <Users className="w-5 h-5" />,
-      imageUrl: Brand
+      imageUrl: Brand,
+      tag:["User Research", "Segmentation"," Consumer Behavior"," Sentiment Analysis"]
     },
     {
       id: "product-strategy",
       title: "Product Strategy & Go-to-Market",
       description: "I'm drawn to the process of building thoughtful, user-centered products. Defining MVPs, mapping roadmaps, and planning go-to-market strategies are areas where I love to contribute.",
       icon: <Target className="w-5 h-5" />,
-      imageUrl: Project
+      imageUrl: Project,
+      tag:["MVP Definition","Product Roadmap","GTM Planning","Feature Prioritization"]
     },
     {
       id: "marketing-analytics",
       title: "Marketing Analytics & Experimentation",
       description: "Turning data into direction excites me. I enjoy analyzing campaign performance, running A/B tests, and using tools like SQL and Tableau to refine what works—and what doesn't.",
       icon: <BarChart2 className="w-5 h-5" />,
-      imageUrl: Analytic 
+      imageUrl: Analytic,
+      tag:[" A/B Testing","Campaign Metrics","SQL & Tableau","Performance Optimization"] 
     },
     {
       id: "brand-strategy",
       title: "Brand & Content Strategy",
       description: "I'm passionate about roles that involve messaging, storytelling, and brand positioning. Whether crafting decks, building narratives, or launching campaigns, I aim to make every word purposeful.",
       icon: <BookOpen className="w-5 h-5" />,
-      imageUrl: Brand
+      imageUrl: Brand,
+      tag:[" MarCom","Email Marketing","Brand Positioning"]
     },
     {
       id: "leadership-management",
       title: "Leadership & Program Management",
       description: "I find joy in leading teams and programs that bring people together. From managing $20K+ event budgets to growing a 35-member board, I thrive in environments where impact is shared and momentum is built collectively.",
       icon: <Layers className="w-5 h-5" />,
-      imageUrl: Leadership
+      imageUrl: Leadership,
+      tag:["Team Leadership","Budget Oversight","Cross-functional Collaboration"]
     },
   ];
 
@@ -114,6 +119,7 @@ const WorkTabs = () => {
           description={activeArea.description}
           icon={activeArea.icon}
           image={activeArea.imageUrl}
+          tag={activeArea.tag}
         />
       </div>
     </div>

@@ -20,8 +20,8 @@ const projects = [
     ],
     links: [
       {
-        href: "https://www.instagram.com/whiffsofnature_kp/",
-        label: "@whiffsofnature_kp"
+        href: "/mystartup",
+        label: "Whiffs of Nature"
       },
       {
         href: "https://www.instagram.com/fete_kp/",

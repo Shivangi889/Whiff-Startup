@@ -3,8 +3,10 @@ import ProfilePic from "../assets/images/Profile pic.jpeg"
 import { IoLogoGithub } from "react-icons/io5";
 import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 function HeroSection({ onAboutClick }) {
+    const navigate = useNavigate();
     return (
         <section className="flex flex-col lg:flex-row ">
             <div className="lg:w-[35%]">
@@ -21,11 +23,36 @@ function HeroSection({ onAboutClick }) {
                     <h1 className="text-black text-[40px] font-[400] font-tenor-sans leading-snug">
                         Pooja Bhatia <br /><span className="">(She/Her)</span>
                     </h1>
-                    <p className="text-lg text-black font-tenor-sans mt-2">Product and Brand Enthusiast</p>
+                    <p className="text-lg text-black font-tenor-sans mt-2">Product and Brand Marketing</p>
                     <div className="flex justify-center gap-6 mt-10 text-2xl cursor-pointer sm:mb-0 mb-2">
-                        <IoLogoGithub className="text-gray-800 hover:text-black hover:scale-110 transition duration-200" />
-                        <FaLinkedin className="text-gray-800 hover:text-[#0A66C2] hover:scale-110 transition duration-200" />
-                        <MdEmail className="text-gray-800 hover:text-red-500 hover:scale-110 transition duration-200" />
+                        <a
+                            href="https://github.com/bhatia-pooja"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub"
+                        >
+                            <IoLogoGithub className="text-gray-800 hover:text-black hover:scale-110 transition duration-200" />
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/bhatiapooja43"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn"
+                        >
+                            <FaLinkedin className="text-gray-800 hover:text-[#0A66C2] hover:scale-110 transition duration-200" />
+                        </a>
+
+                        <a
+                            href="https://mail.google.com/mail/?view=cm&to=pooja.bhatia@email.ucr.edu"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Email"
+                        >
+                            <MdEmail className="text-gray-800 hover:text-red-500 hover:scale-110 transition duration-200" />
+                        </a>
+
+
                     </div>
 
                 </div>
@@ -65,10 +92,10 @@ function HeroSection({ onAboutClick }) {
                         >
                             About Me
                         </button>
-                        <button className="border border-black px-8 sm:px-12 py-2 hover:bg-black hover:text-white transition text-sm font-bold">
-                            Portfolio
+                        <button onClick={() => navigate("/project")} className="border border-black px-8 sm:px-12 py-2 hover:bg-black hover:text-white transition text-sm font-bold">
+                            Projects
                         </button>
-                        <button className="border border-black px-8 sm:px-12 py-2 hover:bg-black hover:text-white transition text-sm font-bold">
+                        <button onClick={() => navigate("/resume")} className="border border-black px-8 sm:px-12 py-2 hover:bg-black hover:text-white transition text-sm font-bold">
                             Resume
                         </button>
                     </div>

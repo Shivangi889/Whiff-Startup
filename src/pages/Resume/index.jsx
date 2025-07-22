@@ -2,47 +2,99 @@ import React from 'react';
 import { ExternalLink, Calendar, MapPin, Award } from 'lucide-react';
 
 const Resume = () => {
-  const experiences = [
-    {
-      title: "Product Strategy Consultant",
-      company: "Independent Consulting",
-      location: "Remote",
-      period: "2023 - Present",
-      description:
-        "Providing strategic consulting services to startups and established companies, focusing on product positioning, market analysis, and go-to-market strategies.",
-      achievements: [
-        "Helped 5+ startups define their product-market fit",
-        "Developed comprehensive market entry strategies",
-        "Conducted user research and competitive analysis",
-      ],
-    },
-    {
-      title: "MBA Student - Business Analytics & Marketing",
-      company: "Business School",
-      location: "University Campus",
-      period: "2021 - 2023",
-      description:
-        "Focused on advanced analytics, consumer behavior, and strategic marketing with emphasis on data-driven decision making.",
-      achievements: [
-        "Graduated with distinction in Business Analytics",
-        "Led multiple cross-functional project teams",
-        "Completed capstone project with real-world business impact",
-      ],
-    },
-    {
-      title: "Business Analyst",
-      company: "Previous Role",
-      location: "City, State",
-      period: "2019 - 2021",
-      description:
-        "Analyzed business processes and market trends to support strategic decision-making and operational improvements.",
-      achievements: [
-        "Improved operational efficiency by 25%",
-        "Led data analysis projects for executive leadership",
-        "Developed reporting frameworks and dashboards",
-      ],
-    },
-  ];
+const experiences = [
+  {
+    title: "Graduate Consultant",
+    company: "Citrus Grove Catering",
+    location: "Riverside, CA",
+    period: "January 2025 – March 2025",
+    description: "Led a cross-functional MBA team to design and implement a digital ordering system for a local catering business.",
+    achievements: [
+      "Replaced manual workflows and reduced order errors by 50%",
+      "Conducted end-to-end journey mapping leading to 20% increase in throughput",
+      "Designed user-centric interface with 15% projected uplift in online conversions",
+      "Applied McKinsey 7S and PESTLE frameworks to assess organizational readiness",
+      "Created implementation roadmap with onboarding plans and KPIs",
+      "Used Tableau and SQL to analyze customer behavior, boosting engagement by 18%"
+    ],
+  },
+  {
+    title: "Product Manager",
+    company: "FinAI Project (MBA Independent Project)",
+    location: "Riverside, CA",
+    period: "June 2024 – September 2024",
+    description: "Led design and delivery of a proof-of-concept AI platform for retail investors.",
+    achievements: [
+      "Validated market need through research and testing",
+      "Conducted 15+ user interviews, improving user flow efficiency by 35%",
+      "Designed Figma wireframes that increased task success rates by 40%",
+      "Researched competitors to define product-market fit"
+    ],
+  },
+  {
+    title: "Co-Founder & Director of Product & Operations",
+    company: "Whiffs of Nature",
+    location: "Mumbai, India",
+    period: "June 2020 – September 2023",
+    description: "Launched a custom gifting startup from ideation to $50K+ in recurring annual revenue.",
+    achievements: [
+      "Secured B2B clients and scaled through PR hampers for brands",
+      "Drove 40% increase in client retention and reorder rates",
+      "Streamlined operations enabling 30% faster production cycles",
+      "Negotiated contracts contributing to $15K in new annual revenue",
+      "Generated 3x increase in qualified inbound leads"
+    ],
+  },
+  {
+    title: "Business Development Analyst",
+    company: "Arthayan Advisory Services Pvt Ltd",
+    location: "Mumbai, India",
+    period: "April 2021 – May 2022",
+    description: "Onboarded 100+ early-stage startups to a beta investor matchmaking platform.",
+    achievements: [
+      "Increased investor-founder match conversion by 25%",
+      "Improved platform matching accuracy and engagement by 15%",
+      "Reduced churn by 18% through UX improvements",
+      "Boosted client acquisition by 25% within 12 months"
+    ],
+  },
+  {
+    title: "Student Advisor & Mentor",
+    company: "International Collegiate Business Strategy Competition (ICBSC)",
+    location: "",
+    period: "January 2025 – April 2024",
+    description: "Mentored 20 students across three teams in a four-month business simulation.",
+    achievements: [
+      "Coached team CEOs on leadership and strategic decisions",
+      "Helped create Board-style documents and executive presentations",
+      "Guided UCR teams to 3 awards at ICBSC 2025"
+    ],
+  },
+  {
+    title: "President",
+    company: "AGSM Women in Business",
+    location: "",
+    period: "June 2024 – June 2025",
+    description: "Led a cross-functional executive board of 35 members across 6 departments.",
+    achievements: [
+      "Executed UC Women in Business Leadership Summit with 150+ attendees",
+      "Designed professional development initiatives and case competitions",
+      "Expanded access to mentorship and career opportunities"
+    ],
+  },
+  {
+    title: "Chief Strategy Officer",
+    company: "ICBSC Business Strategy Competition - EcoChew",
+    location: "",
+    period: "2024",
+    description: "Competed in global MBA team simulation managing a manufacturing company.",
+    achievements: [
+      "Placed 2nd in overall performance",
+      "Won 1st in Best Documents Award",
+      "Secured top rankings among five finalist teams"
+    ],
+  }
+];
 
   const education = [
     {
@@ -98,8 +150,8 @@ const Resume = () => {
         {/* Professional Experience */}
         <section className="mb-16">
           <h2 className="text-2xl md:text-3xl font-semibold mb-8 pb-2 border-b border-gray-100 flex items-center gap-3">
-            <span className="w-6 h-6 bg-[#fff27d] rounded-full flex items-center justify-center">
-              <Award className="w-3 h-3 text-gray-900" />
+            <span className="w-10 h-10 bg-[#fff27d] rounded-full flex items-center justify-center">
+              <Award className="w-8 h-8 text-gray-900" />
             </span>
             Professional Experience
           </h2>
@@ -144,8 +196,8 @@ const Resume = () => {
         {/* Education */}
         <section className="mb-16">
           <h2 className="text-2xl md:text-3xl font-semibold mb-8 pb-2 border-b border-gray-100 flex items-center gap-3">
-            <span className="w-6 h-6 bg-[#fff27d] rounded-full flex items-center justify-center">
-              <Award className="w-3 h-3 text-gray-900" />
+            <span className="w-10 h-10 bg-[#fff27d] rounded-full flex items-center justify-center">
+              <Award className="w-8 h-8 text-gray-900" />
             </span>
             Education
           </h2>
@@ -179,8 +231,8 @@ const Resume = () => {
         {/* Certifications & Skills */}
         <section>
           <h2 className="text-2xl md:text-3xl font-semibold mb-8 pb-2 border-b border-gray-100 flex items-center gap-3">
-            <span className="w-6 h-6 bg-[#fff27d] rounded-full flex items-center justify-center">
-              <Award className="w-3 h-3 text-gray-900" />
+            <span className="w-10 h-10 bg-[#fff27d] rounded-full flex items-center justify-center">
+              <Award className="w-8 h-8 text-gray-900" />
             </span>
             Certifications & Skills
           </h2>

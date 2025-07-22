@@ -1,10 +1,7 @@
 import React from "react";
-import { Box, Gift, Users, BarChart, Award } from "lucide-react";
+import { Box, Gift, Users, BarChart, Award  , Blocks} from "lucide-react";
 import Collage from "../../assets/images/collage.webp";
-
-import { IoLogoGithub } from "react-icons/io5";
-import { FaLinkedin } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+import { FaInstagram } from "react-icons/fa";
 
 
 const Card = ({ title, children }) => (
@@ -14,13 +11,14 @@ const Card = ({ title, children }) => (
   </div>
 );
 
-const StatCard = ({ icon, number, label }) => (
+const StatCard = ({ icon, number, label,brief }) => (
   <div className="flex flex-col items-center p-6 bg-white/90 rounded-lg shadow-md text-center">
     <div className="p-3 bg-[#fff27d] rounded-full mb-3">
       {React.cloneElement(icon, { className: "w-8 h-8 text-black" })}
     </div>
     <span className="text-4xl font-bold font-tenor-sans text-black ">{number}</span>
     <span className="text-lg text-gray-800 mt-2 font-tenor-sans">{label}</span>
+    <p className="text-lg text-gray-800 mt-2 font-tenor-sans">{brief}</p>
   </div>
 );
 
@@ -48,28 +46,32 @@ const WhiffsOfNature = () => {
         {/* Spark */}
         <Card title="The Spark">
           <p className="text-lg leading-relaxed text-black/90 mb-4 font-tenor-sans">
-            Whiffs of Nature was born in the summer of 2020, in a slowly reawakening Mumbai. It started as a small, spirited idea between me and my best friend—an attempt to bring color, thoughtfulness, and joy to people's homes as India emerged from lockdown.
+           Whiffs of Nature was born in the summer of 2020, in a slowly reawakening Mumbai. It started as a small, spirited idea between me and my best friend—an attempt to bring color, thoughtfulness, and joy to people’s homes as India emerged from lockdown.
           </p>
           <p className="text-lg text-black/90 font-tenor-sans">
-            That year, during the month of Shravan with festivals like Raksha Bandhan and Ganesh Chaturthi, we noticed the demand for personalized, culturally-rooted gifts. Testing our early candle sets in flea markets gave us our first product-market fit.
+           That year, as the month of Shravan approached—a season rich with Indian festivals like Raksha Bandhan and Ganesh Chaturthi—we saw a shift in consumer sentiment. People still wanted to celebrate, but traditional gifting felt impersonal. There was a clear gap: the need for creative, locally available, highly personalized gifts that reflected culture with a fresh twist.
           </p>
+             <p className="text-lg text-black/90 font-tenor-sans">
+             This was my first product-market fit moment. We validated early interest by testing our candles and gift sets in local flea markets—watching what caught attention, what sold, and what sparked conversations. Each launch became a form of user testing, and every stall, a live research lab.
+             </p>
         </Card>
 
         {/* Vision */}
         <Card title="The Vision">
           <p className="text-black/85 font-tenor-sans">
-            We set out to build giftable candles rooted in Indian culture, yet unexpected in form—from "Chai Ki Tapri" candle sets to Diwali-themed packaging. Our goal was to deliver delight, not just products.
+          Our goal was to create bespoke, giftable candles that felt rooted in Indian tradition, yet unexpected in form and experience. From “Chai Ki Tapri” candle sets inspired by Mumbai tea stalls to festival-themed packaging aligned with Diwali, every product was designed to tell a story.
           </p>
+             <p className="text-lg text-black/90 font-tenor-sans">We weren't just selling candles—we were delivering delight in a box. And through every touchpoint—product, packaging, messaging—we were building a brand rooted in culture, creativity, and customer empathy.</p>
         </Card>
 
         {/* My Role */}
         <Card title="My Role: Building Products and Driving Growth">
           <ul className="list-disc list-inside space-y-2 text-black/85 font-tenor-sans">
-            <li><strong>Product Strategy:</strong> Ideated new collections, sourced materials, managed timelines.</li>
-            <li><strong>Customer Testing:</strong> Validated ideas at flea markets, adapted quickly from live feedback.</li>
-            <li><strong>GTM Execution:</strong> Mapped messaging to Indian festivals, launched with cultural relevance.</li>
-            <li><strong>Marketing:</strong> Ran Meta & Google ads, built email CRM pipelines to drive retention.</li>
-            <li><strong>Brand Growth:</strong> Launched Fête for B2B luxury gifting while scaling Whiffs for retail.</li>
+            <li><strong>Product Development & Strategy:</strong> I led ideation and design of new collections, managed production timelines, sourced materials, and built fulfillment workflows—planning seasonal “roadmaps” around cultural calendars and customer needs.</li>
+            <li><strong>Customer Discovery & Market Testing:</strong> Each new idea began with insights from users. We tested concepts in real-time at flea markets, adjusting scent profiles, packaging, and messaging based on live feedback.</li>
+            <li><strong>Go-to-Market Execution:</strong>  I built and executed our GTM plans—launching product lines for major festivals, mapping messaging to cultural moments, and differentiating our offerings through thoughtful branding.</li>
+            <li><strong>Marketing & Acquisition:</strong>  I led growth marketing using Meta and Google ads, paired with email and CRM strategies. Every campaign was data-informed, designed to convert and retain.</li>
+            <li><strong>Brand Positioning & Expansion:</strong> When consumer brands began reaching out for gifting support, I launched Fête, a sister brand focused on luxury B2B gifting—ensuring our core brand Whiffs retained its retail focus while unlocking a new vertical.</li>
           </ul>
         </Card>
 
@@ -80,26 +82,37 @@ const WhiffsOfNature = () => {
               icon={<Box size={24} />}
               number="12,000+"
               label="Candles Delivered"
+              brief=" → Across retail, gifting, and event-based sales over 3 years."
             />
             <StatCard
               icon={<Gift size={24} />}
               number="10"
               label="Corporate Diwali Campaigns"
+              brief=" → Totalling 3,000+ custom gift boxes for major B2B clients."
             />
             <StatCard
               icon={<Users size={24} />}
               number="60%"
               label="Customer Retention"
+              brief=" → Through repeat purchase behavior and community-driven brand affinity."
             />
             <StatCard
               icon={<BarChart size={24} />}
-              number="3,000+"
-              label="Gift Boxes"
+              number="7+"
+              label=" High-Stakes PR Campaigns"
+               brief=" → Fully owned and executed under Fête for top wellness and beauty brands."
             />
             <StatCard
               icon={<Award size={24} />}
-              number="50+"
-              label="PR Kits for Brands"
+              number="5+"
+              label=" Operational Tools Integrated"
+              brief=" → Canva, Wix, Meta Ads, Excel, Google Suite, CRM platforms for GTM enablement."
+            />
+              <StatCard
+              icon={< Blocks size={24} />}
+              number="30+"
+              label=" Flea Markets & Pop-Ups"
+              brief=" → Deployed for product testing, pricing validation, and real-time customer feedback."
             />
           </div>
         </Card>
@@ -109,11 +122,11 @@ const WhiffsOfNature = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <p className="text-black/85 mb-4">
-                I learned that every detail—from scent to packaging—shapes perception. Whiffs taught me product empathy, storytelling, iteration, and building fast in uncertain times.
-              </p>
+Whiffs of Nature taught me what it means to build products with empathy. From understanding why a scent matters to seeing how packaging shapes perception, I learned that every detail matters when you’re creating something people invite into their lives.              </p>
+            <p className="text-black/85 mb-4">It also showed me the power of brand storytelling and user-led iteration—skills that are at the heart of great product marketing and product management. Whether I was navigating festival season demand or pitching to corporate clients, I was building strategy, testing assumptions, and learning fast.</p>   
               <p className="italic text-black/80">
-                A culture-rooted, creativity-led venture that proved thoughtful design and bold ideas can thrive—even in uncertain times.
-              </p>
+If I had to sum it up?
+ A culture-rooted, creativity-led venture that proved thoughtful design and bold ideas can thrive—even in uncertain times.              </p>
             </div>
             <div className="bg-white/80 p-6 rounded-lg shadow-inner flex items-center justify-center">
               <div className="text-center">
@@ -131,10 +144,25 @@ const WhiffsOfNature = () => {
           <div className="flex flex-col items-center">
             <h3 className="text-2xl font-serif font-bold mb-6">Follow Our Journey</h3>
             <div className="flex flex-wrap justify-center gap-6 cursor-pointer">
-              <IoLogoGithub size={25} className="text-gray-800 hover:text-black hover:scale-110 transition duration-200" />
-              <FaLinkedin size={25} className="text-gray-800 hover:text-[#0A66C2] hover:scale-110 transition duration-200" />
-              <MdEmail  size={25} className="text-gray-800 hover:text-red-500 hover:scale-110 transition duration-200" />
-            </div>
+        <a
+                            href="https://www.instagram.com/whiffsofnature_kp/ "
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="instagram"
+                        >
+           <FaInstagram  size={25} className="text-gray-800 hover:text-green-800 hover:scale-110 transition duration-200"/>
+          
+          </a> 
+             <a
+                            href="https://www.instagram.com/fete_kp/  "
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="instagram"
+                        >
+           <FaInstagram  size={25} className="text-gray-800 hover:text-green-800 hover:scale-110 transition duration-200"/>
+          
+          </a> 
+           </div>
           </div>
         </Card>
       </section>

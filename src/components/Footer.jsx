@@ -48,7 +48,7 @@ const Footer = () => {
     return (
         <>
             {/* CTA Section */}
-            <div className="bg-[#fff27d] text-gray-900 px-6 py-5 md:py-8">
+            {/* <div className="bg-[#fff27d] text-gray-900 px-6 py-5 md:py-8">
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
                     <div className="max-w-2xl">
                         <h4 className="text-sm font-semibold uppercase mb-3 tracking-wider text-gray-800 font-tenor-sans">Ready to transform your product?</h4>
@@ -66,7 +66,7 @@ const Footer = () => {
                         </button>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             {/* Footer */}
             <footer className="bg-gray-900 text-gray-300 pt-10 pb-5 px-6">
@@ -163,7 +163,7 @@ const Footer = () => {
 
                         <div className="flex gap-4 mt-4">
                             <a
-                                href="https://linkedin.com"
+                                href="https://www.linkedin.com/in/bhatiapooja43"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="bg-gray-800 hover:bg-gray-700 p-3 rounded-full transition-all duration-300 hover:-translate-y-1"
@@ -172,14 +172,14 @@ const Footer = () => {
                                 <Linkedin size={20} className="text-gray-300 hover:text-white" />
                             </a>
                             <a
-                                href="mailto:pooja@example.com"
+                                href="https://mail.google.com/mail/?view=cm&to=pooja.bhatia@email.ucr.edu"
                                 className="bg-gray-800 hover:bg-gray-700 p-3 rounded-full transition-all duration-300 hover:-translate-y-1"
                                 aria-label="Email"
                             >
                                 <Mail size={20} className="text-gray-300 hover:text-white" />
                             </a>
                             <a
-                                href="https://github.com"
+                                href="https://github.com/bhatia-pooja"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="bg-gray-800 hover:bg-gray-700 p-3 rounded-full transition-all duration-300 hover:-translate-y-1"

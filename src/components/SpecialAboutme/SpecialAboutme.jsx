@@ -5,40 +5,44 @@ import image1 from "../../assets/images/IMG_8536.jpeg";
 import image2 from "../../assets/images/IMG_3413.jpeg";
 import image3 from "../../assets/images/IMG_3738.jpeg";
 import image4 from "../../assets/images/IMG_3611.jpeg";
-
+import Simple from "../../assets/SPECIAL.mp4"
 
 const Special = () => {
   const specialItems = [
     {
       icon: <Award className="icon purple" />,
-      title: "Clarity-Driven Problem Solver",
+      title: "Problem Solver",
       description:
-        "My strength lies in translating complexity into clarity. Whether mapping customer journeys, decoding market signals, or aligning cross-functional teams...",
-      tags: ["Clarity", "Analytical Thinking"],
+        " My strength lies in translating complexity into clarity. Whether it’s mapping customer journeys, decoding market signals, or aligning cross-functional teams, I approach problems with curiosity and structure. My background in business analytics gives me the toolkit to dig deep into the “what,” but it’s my marketing lens that pushes me to always ask “why”—why people behave the way they do, and how we can build for that behavior",
+      tags: "Clarity-Driven ",
+      para:"Translating complexity into clarity, powered by curiosity and structure.",
       img: image1
     },
     {
       icon: <GraduationCap className="icon blue" />,
       title: "Values-Led Leader & Community Builder",
       description:
-        "Leadership isn’t just a title—it’s a practice. As President of Women in Business at UCR, I led a 35-member executive board...",
-      tags: ["Leadership", "Community Building"],
+        " Leadership isn’t just a title to me—it’s a practice. At UCR, I led a 35-member executive board as President of Women in Business, guiding the organization through its most significant growth to date. With a programming budget of nearly $20,000, we hosted 20+ high-impact events and expanded our presence across campuses and industries. I found purpose in mentoring peers, building inclusive communities, and creating spaces where future leaders could thrive.",
+      tags: ["Values-Led "],
+      para:"Guiding teams, growing communities, and creating space for others to thrive.",
       img: image2
     },
     {
       icon: <Star className="icon amber" />,
-      title: "Academic Achiever with Real-World Grit",
+      title: " with Real-World Grit",
       description:
-        "Earning a 3.85 GPA and induction into Beta Gamma Sigma, I blended academic excellence with applied success...",
-      tags: ["Academic Excellence", "Dedication"],
+        "That same commitment to excellence earned me induction into Beta Gamma Sigma, the international honor society for the top 20% of graduate business students—recognition that aligned with my 3.85 GPA and dedication to both academic and applied success. I believe learning doesn’t stop at theory—real value comes from applying that knowledge with purpose and precision.",
+      tags: ["Academic Achiever"],
+       para:"Rooted in excellence, recognized for performance and impact.",
       img: image3
     },
     {
       icon: <Club className="icon emerald" />,
-      title: "Entrepreneurial Hustler with Heart",
+      title: "Hustler with Heart",
       description:
-        "As a co-founder of Whiffs of Nature, I built a business from the ground up—wearing every hat...",
-      tags: ["Entrepreneurship", "Adaptability"],
+        " I’ve also been on the other side—building from zero, wearing every hat, and learning how to hustle with heart. As a founder of Whiffs of Nature, I learned to balance creativity with execution and customer delight with operational efficiency. That experience sharpened my ability to prioritize, adapt quickly, and deliver value—no matter the resource constraints.",
+      tags: ["Entrepreneurship"],
+      para:"Building from zero, wearing every hat, and learning how to hustle with heart.",
       img: image4
     },
   ];
@@ -64,14 +68,19 @@ const Special = () => {
     <section className="px-4 md:px-5 py-10 flex flex-col lg:flex-row gap-12 items-center">
       {/* Left: Text Section */}
       <div className="w-full lg:w-1/2 flex justify-center items-center text-center lg:text-left">
-        <h1 className="text-2xl sm:text-2xl md:text-4xl leading-tight text-black">
-          I see the<br />
-          bigger<br />
-          picture—and<br />
-          then <span className="bg-[#fff27d] px-2">zoom</span> in<br />
-          to connect<br />
-          the dots.
-        </h1>
+      <div className="w-full max-w-[500px]">
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="w-full rounded-lg "
+  >
+    <source src={Simple} type="video/mp4" />
+   special about me
+  </video>
+</div>
+
       </div>
 
       {/* Right: Card Section */}
@@ -96,11 +105,14 @@ const Special = () => {
         {/* Tags and Title */}
         <div className="mt-4">
           <span className="bg-[#fff27d] px-3 py-1 rounded text-sm font-semibold mr-2">
-            {specialItems[currentItem].tags[0]}
+            {specialItems[currentItem].tags}
           </span>
           <span className="text-lg font-semibold text-gray-800">
             {specialItems[currentItem].title}
           </span>
+          <p className="text-lg font-semibold text-gray-800">
+             {specialItems[currentItem].para} 
+          </p>
         </div>
 
         {/* Controls */}
