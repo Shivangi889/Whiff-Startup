@@ -6,6 +6,7 @@ import Resume from './pages/Resume';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import ProjectGrid from './pages/Projects';
+import Contact from './pages/Contact';
 
 const AboutUs = lazy(() => import('./pages/About Us'));
 
@@ -23,10 +24,18 @@ const LoadingFallback = () => (
 export default function App() {
 
   const aboutRef = useRef(null);
+  const footerRef = useRef(null);
 
   const handleScrollToAbout = () => {
     if (aboutRef.current) {
       aboutRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  // Add this function to scroll to footer
+  const handleScrollToFooter = () => {
+    if (footerRef.current) {
+      footerRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
   return (
@@ -39,9 +48,14 @@ export default function App() {
           <Route path="/mystartup" element={<MyStartUp />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/project" element={<ProjectGrid />} />
+          <Route path="/contact" element={
+            <Contact scrollToFooter={handleScrollToFooter} />
+          } />
         </Routes>
       </Suspense>
-      <Footer />
+      <div ref={footerRef}> {/* Wrap Footer with ref */}
+        <Footer />
+      </div>
     </Router>
   );
 }

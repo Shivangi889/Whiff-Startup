@@ -1,10 +1,10 @@
 import React from "react";
-import { Instagram, Github, Figma } from "lucide-react";
+import { Instagram, Github, Globe, Figma } from "lucide-react";
 
 import project1 from '../../assets/Projects/project1.png'
 import project2 from '../../assets/Projects/project2.png'
 import project3 from '../../assets/Projects/project3.png'
-import project4 from '../../assets/Projects/project4.jpg'
+import project4 from '../../assets/Projects/project4.jpeg'
 
 const projects = [
   {
@@ -148,12 +148,18 @@ const ProjectGrid = () => {
                         <Figma className="w-3.5 h-3.5 text-purple-600" />
                         {link.label}
                       </>
+                    ) : link.label.includes("Whiffs") ? (
+                      <>
+                        <Globe  className="w-3.5 h-3.5 text-purple-600" />
+                        {link.label}
+                      </>
                     ) : (
                       <>
                         <Github className="w-3.5 h-3.5 text-gray-800" />
                         {link.label}
                       </>
-                    )}
+                    )
+                    }
                   </a>
                 ))}
               </div>

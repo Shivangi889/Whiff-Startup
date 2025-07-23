@@ -9,7 +9,7 @@ const WorkCard = ({ title, description, icon, image ,tag}) => {
   return (
     <div className="max-w-6xl border  mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
       {/* Image Section */}
-      <div className="relative h-64 md:h-auto">
+      <div className="relative sm:h-64 h-auto md:h-auto">
         <img
           src={image}
           alt={title}

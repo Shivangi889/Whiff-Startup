@@ -21,9 +21,9 @@ const AboutMe = ({ refProp }) => {
           <img
             src={Grad}
             alt="Before Grad School"
-            className="w-full h-[350px] object-cover rounded-[20px] mb-4 transition duration-300 group-hover:brightness-75 group-hover:scale-105"
+            className="w-full h-[350px] object-cover rounded-[20px] mb-4 transition duration-300 group-hover:brightness-75 group-hover:scale-105 group-active:brightness-75 group-active:scale-105"
           />
-          <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
+          <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition duration-300">
             <p className="text-white text-xl font-semibold px-4 text-center">I launched and grew a custom gifting business, Whiffs of Nature, from a scrappy startup into a client-retaining brand. That experience taught me more than any textbook ever could about intuition, iteration, and creating joyful customer experiences.</p>
           </div>
           <span className="text-2xl">
@@ -36,9 +36,9 @@ const AboutMe = ({ refProp }) => {
           <img
             src={Drives}
             alt="What Drives Me"
-            className="w-full h-[350px] object-cover rounded-[20px] mb-4 transition duration-300 group-hover:brightness-75 group-hover:scale-105"
+            className="w-full h-[350px] object-cover rounded-[20px] mb-4 transition duration-300 group-hover:brightness-75 group-hover:scale-105 group-active:brightness-75 group-active:scale-105"
           />
-          <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
+          <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition duration-300">
             <p className="text-white text-xl font-semibold px-4 text-center">I’m energized by the “why” behind the data—what makes users tick, how their needs evolve, and how businesses can build not just features, but trust. My approach is deeply customer-first, always looking for the story in the numbers.</p>
           </div>
           <span className="text-2xl">
@@ -51,9 +51,9 @@ const AboutMe = ({ refProp }) => {
           <img
             src={Outside}
             alt="Outside the Office"
-            className="w-full h-[350px] object-cover rounded-[20px] mb-4 transition duration-300 group-hover:brightness-75 group-hover:scale-105"
+            className="w-full h-[350px] object-cover rounded-[20px] mb-4 transition duration-300 group-hover:brightness-75 group-hover:scale-105 group-active:brightness-75 group-active:scale-105"
           />
-          <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
+          <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition duration-300">
             <p className="text-white text-xl font-semibold px-4 text-center">Nature is my reset button. I love redwood hikes, starlit campsites, and long summer beach days. These moments of stillness keep me grounded, imaginative, and ready to tackle complex challenges with a fresh lens.</p>
           </div>
           <span className="text-2xl">
