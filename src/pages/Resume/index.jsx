@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Calendar, MapPin, Award ,GraduationCap} from 'lucide-react';
+import { ExternalLink, Calendar, MapPin, Award, GraduationCap } from 'lucide-react';
 
 const Resume = () => {
   const experiences = [
@@ -62,47 +62,47 @@ const Resume = () => {
       ],
     }
   ];
-const leadership = [
-  {
-    title: "Student Advisor & Mentor",
-    company: "International Collegiate Business Strategy Competition (ICBSC)",
-    location: "",
-    period: "January 2025 – April 2025",
-    description:
-      "Mentored 20 students across three teams in a four-month business simulation, advising on financial, marketing, and operations strategy for a consumer goods manufacturing firm.",
-    achievements: [
-      "Coached team CEOs on leadership by guiding decisions, asking key questions, and encouraging ownership of outcomes.",
-      "Helped teams create Board-style documents, reports, and executive presentations for investor panels.",
-      "Analyzed team financials, adjusted strategy, and improved performance in a competitive simulation.",
-      "Guided UCR teams to 3 awards at ICBSC 2025 through advising, coaching, and cross-functional support."
-    ],
-  },
-  {
-    title: "President",
-    company: "AGSM Women in Business",
-    location: "",
-    period: "June 2024 – June 2025",
-    description:
-      "Led a cross-functional executive board of 35 members across 6 departments including Marketing, Partnerships, Finance, and Communications, fostering strategic collaboration and operational efficiency.",
-    achievements: [
-      "Executed the flagship UC Women in Business Leadership Summit during Women’s History Month—co-hosted with UCSD, UCI & UCR WIB chapters—drawing 150+ attendees for a full day of learning, networking, and empowerment.",
-      "Designed and managed high-impact professional development initiatives such as a 3-day Business Case Study Competition and panel discussions with seasoned professionals across MBA concentrations.",
-      "Cultivated strong relationships with alumni, local businesses, faculty, and academic leaders to expand access to speaking engagements, mentorship, and career opportunities for MBA students.",
-      "Elevated the visibility and reach of the organization through strategic community engagement and inclusive programming aimed at fostering leadership, empowerment, and career readiness."
-    ],
-  },
-  {
-    title: "Chief Strategy Officer",
-    company: "ICBSC Business Strategy Competition – EcoChew",
-    location: "",
-    period: "2024",
-    description:
-      "Placed 2nd in overall performance and 1st in Best Documents Award in a prestigious global competition where MBA teams manage a simulated manufacturing company, making strategic decisions across marketing, sales, finance, operations, and production.",
-    achievements: [
-      "Competed against graduate business school teams worldwide, securing top rankings among five finalist teams."
-    ],
-  }
-];
+  const leadership = [
+    {
+      title: "Student Advisor & Mentor",
+      company: "International Collegiate Business Strategy Competition (ICBSC)",
+      location: "",
+      period: "January 2025 – April 2025",
+      description:
+        "Mentored 20 students across three teams in a four-month business simulation, advising on financial, marketing, and operations strategy for a consumer goods manufacturing firm.",
+      achievements: [
+        "Coached team CEOs on leadership by guiding decisions, asking key questions, and encouraging ownership of outcomes.",
+        "Helped teams create Board-style documents, reports, and executive presentations for investor panels.",
+        "Analyzed team financials, adjusted strategy, and improved performance in a competitive simulation.",
+        "Guided UCR teams to 3 awards at ICBSC 2025 through advising, coaching, and cross-functional support."
+      ],
+    },
+    {
+      title: "President",
+      company: "AGSM Women in Business",
+      location: "",
+      period: "June 2024 – June 2025",
+      description:
+        "Led a cross-functional executive board of 35 members across 6 departments including Marketing, Partnerships, Finance, and Communications, fostering strategic collaboration and operational efficiency.",
+      achievements: [
+        "Executed the flagship UC Women in Business Leadership Summit during Women’s History Month—co-hosted with UCSD, UCI & UCR WIB chapters—drawing 150+ attendees for a full day of learning, networking, and empowerment.",
+        "Designed and managed high-impact professional development initiatives such as a 3-day Business Case Study Competition and panel discussions with seasoned professionals across MBA concentrations.",
+        "Cultivated strong relationships with alumni, local businesses, faculty, and academic leaders to expand access to speaking engagements, mentorship, and career opportunities for MBA students.",
+        "Elevated the visibility and reach of the organization through strategic community engagement and inclusive programming aimed at fostering leadership, empowerment, and career readiness."
+      ],
+    },
+    {
+      title: "Chief Strategy Officer",
+      company: "ICBSC Business Strategy Competition – EcoChew",
+      location: "",
+      period: "2024",
+      description:
+        "Placed 2nd in overall performance and 1st in Best Documents Award in a prestigious global competition where MBA teams manage a simulated manufacturing company, making strategic decisions across marketing, sales, finance, operations, and production.",
+      achievements: [
+        "Competed against graduate business school teams worldwide, securing top rankings among five finalist teams."
+      ],
+    }
+  ];
 
 
   const education = [
@@ -235,12 +235,12 @@ const leadership = [
           </div>
         </section>
         {/* LEADERSHIP AND CAMPUS INVOLVEMENT */}
-  <section className="mb-16">
+        <section className="mb-16">
           <h2 className="text-2xl md:text-3xl font-semibold mb-8 pb-2 border-b border-gray-100 flex items-center gap-3">
             <span className="w-10 h-10 bg-[#fff27d] rounded-full flex items-center justify-center">
               <ExternalLink className="w-8 h-8 text-gray-900" />
             </span>
-          Leadership & Campus Involvement
+            Leadership & Campus Involvement
           </h2>
           <div className="space-y-10">
             {leadership.map((exp, idx) => (
@@ -352,18 +352,18 @@ const leadership = [
             <h3 className="text-lg font-bold mb-4 text-gray-900">Core Competencies</h3>
             <div className="flex flex-wrap gap-3">
               {[
-                 'Product Strategy & Roadmapping',
-  'User Research & UX Optimization',
-  'Cross-Functional Team Leadership',
-  'Data Analytics & Insights (SQL, Tableau, Python, Excel)',
-  'Go-to-Market Strategy',
-  'Stakeholder Management',
-  'Agile Product Development',
-  'Customer-Centric Product Design',
-  'Business & Financial Acumen',
-  'Leadership & Organizational Management',
-  'Communication & Presentation',
-  'Market & Competitive Research'
+                'Product Strategy & Roadmapping',
+                'User Research & UX Optimization',
+                'Cross-Functional Team Leadership',
+                'Data Analytics & Insights (SQL, Tableau, Python, Excel)',
+                'Go-to-Market Strategy',
+                'Stakeholder Management',
+                'Agile Product Development',
+                'Customer-Centric Product Design',
+                'Business & Financial Acumen',
+                'Leadership & Organizational Management',
+                'Communication & Presentation',
+                'Market & Competitive Research'
               ].map((skill, index) => (
                 <span
                   key={index}

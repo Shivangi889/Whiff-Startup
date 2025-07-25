@@ -53,7 +53,7 @@ const WorkTabs = () => {
       title: "Customer & Market Insights",
       description: "I'm deeply curious about people—what they need, how they think, and why they buy. I enjoy diving into qualitative interviews, surveys, and data analysis to explore everything from audience segmentation to sentiment trends.",
       icon: <Users className="w-5 h-5" />,
-      imageUrl: Brand,
+      imageUrl: Market,
       tag:["User Research", "Segmentation"," Consumer Behavior"," Sentiment Analysis"]
     },
     {
