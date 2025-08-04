@@ -133,11 +133,11 @@ const Footer = () => {
                                 My Projects
                             </Link>
                             <Link
-                                to="/mystartup"
+                                to="/myfounderera"
                                 className="hover:text-white transition-colors duration-200 flex items-center gap-2 group"
                             >
                                 <span className="w-2 h-2 bg-yellow-400 rounded-full opacity-0 group-hover:opacity-100 transition"></span>
-                                My StartUp
+                                My Founder Era
                             </Link>
                             <Link
                                 to="/resume"

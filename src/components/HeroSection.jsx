@@ -23,7 +23,7 @@ function HeroSection({ onAboutClick }) {
                     <h1 className="text-black text-[40px] font-[400] font-tenor-sans leading-snug">
                         Pooja Bhatia <br /><span className="">(She/Her)</span>
                     </h1>
-                    <p className="text-lg text-black font-tenor-sans mt-2">Product and Brand Marketing</p>
+                    <p className="text-lg text-black font-tenor-sans mt-2">Product and Customer Enthusiast</p>
                     <div className="flex justify-center gap-6 mt-10 text-2xl cursor-pointer sm:mb-0 mb-2">
                         <a
                             href="https://github.com/bhatia-pooja"

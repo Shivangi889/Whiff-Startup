@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import ProjectGrid from './pages/Projects';
 import Contact from './pages/Contact';
+import ProjectDetails from './pages/Projects/ProjectDetails';
 
 const AboutUs = lazy(() => import('./pages/About Us'));
 
@@ -45,9 +46,10 @@ export default function App() {
       <Suspense fallback={<LoadingFallback />}>
         <Routes>
           <Route path="/" element={<AboutUs />} />
-          <Route path="/mystartup" element={<MyStartUp />} />
+          <Route path="/myfounderera" element={<MyStartUp />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/project" element={<ProjectGrid />} />
+          <Route path="/project/:projectId" element={<ProjectDetails />} />
           <Route path="/contact" element={
             <Contact scrollToFooter={handleScrollToFooter} />
           } />

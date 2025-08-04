@@ -2,6 +2,7 @@ import React from "react";
 import Grad from "../assets/images/IMG_6379.jpeg";
 import Drives from "../assets/images/UCR Women in Business Leadership 2025-222.jpg"
 import Outside from "../assets/images/IMG_7633.jpeg"
+import { motion } from 'framer-motion';
 
 const AboutMe = ({ refProp }) => {
   return (
@@ -65,12 +66,66 @@ const AboutMe = ({ refProp }) => {
 
 
       {/* What's Next */}
-      <div className="max-w-4xl py-8 mx-auto mt-5 flex flex-col md:flex-row md:items-center">
+      {/* <div className="max-w-4xl py-8 mx-auto mt-5 flex flex-col md:flex-row md:items-center">
         <span className="text-2xl font-tenor-sans font-light mr-4">WHAT'S NEXT:</span>
         <span className="text-black font-semibold text-sm md:w-2/3">
           Now, I’m focused on roles that marry product thinking with strategic insight – whether that’s as a product manager, GTM analyst, or marketing strategist.
         </span>
+      </div> */}
+        <section className="max-w-5xl mx-auto mt-16 px-6 py-12 border-t border-b border-black relative overflow-hidden bg-white">
+      {/* Background Glow Removed and Unified Colors */}
+
+      <div className="flex flex-col md:flex-row items-start md:items-center gap-6 relative z-10">
+        {/* Gradient Animated Title - Recolored */}
+        <div className="group relative flex-shrink-0">
+          <motion.h2
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-3xl md:text-4xl font-tenor-sans text-black tracking-tight"
+          >
+            WHAT'S NEXT
+          </motion.h2>
+          <motion.div
+            className="h-0.5 w-1/2 bg-[#fff27d] mt-1 group-hover:w-full transition-all duration-300"
+            initial={{ width: '0%' }}
+            whileInView={{ width: '100%' }}
+            transition={{ duration: 1 }}
+          />
+        </div>
+
+        {/* Highlighted Content with Custom Colors */}
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.6 }}
+          className="flex-1 text-black text-sm md:text-base font-medium leading-relaxed"
+        >
+          <span className="relative inline-block px-1 -mx-1 hover:bg-[#fff27d]/30 rounded transition-colors">
+            <span className="font-semibold text-black">Now navigating</span> roles that blend
+          </span>{' '}
+          <span className="relative inline-block px-1 -mx-1 hover:bg-[#fff27d]/30 rounded transition-colors">
+            <span className="font-semibold text-black">product thinking</span> with
+          </span>{' '}
+          <span className="relative inline-block px-1 -mx-1 hover:bg-[#fff27d]/30 rounded transition-colors">
+            <span className="font-semibold text-black">strategic insight</span> —
+          </span>{' '}
+          as a{' '}
+          <span className="underline decoration-[#fff27d] underline-offset-4 hover:decoration-black transition-all duration-200">
+            product manager
+          </span>
+          ,{' '}
+          <span className="underline decoration-[#fff27d] underline-offset-4 hover:decoration-black transition-all duration-200">
+            GTM analyst
+          </span>
+          , or{' '}
+          <span className="underline decoration-[#fff27d] underline-offset-4 hover:decoration-black transition-all duration-200">
+            marketing strategist
+          </span>
+          .
+        </motion.p>
       </div>
+    </section>
     </div>
   );
 };

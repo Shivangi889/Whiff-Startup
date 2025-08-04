@@ -148,7 +148,7 @@ const Resume = () => {
       authority: "HubSpot Academy",
       title: "Inbound Marketing Certified",
       year: "2025",
-      link: "https://app-na2.hubspot.com/academy/achievements/x58wwfcq/en/1/pooja-bhatia/inbound-marketing", // Add actual link if available
+      link: "https://drive.google.com/drive/folders/1wxO7WhBz6p8YQt0uoDhU2Q75CKEjF8St", // Add actual link if available
     },
     {
       authority: "Six Sigma Online",
