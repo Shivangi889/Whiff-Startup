@@ -70,12 +70,18 @@ const ProjectGrid = () => {
                         <Globe className="w-3.5 h-3.5 text-purple-600" />
                         {link.label}
                       </>
-                    ) : (
-                      <>
-                        <Github className="w-3.5 h-3.5 text-gray-800" />
-                        {link.label}
-                      </>
                     )
+                      : link.label.includes("Prototype") ? (
+                        <>
+                          <Globe className="w-3.5 h-3.5 text-purple-600" />
+                          {link.label}
+                        </>
+                      ) : (
+                        <>
+                          <Github className="w-3.5 h-3.5 text-gray-800" />
+                          {link.label}
+                        </>
+                      )
                     }
                   </a>
                 ))}
