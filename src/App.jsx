@@ -8,6 +8,11 @@ import Header from './components/Header';
 import ProjectGrid from './pages/Projects';
 import Contact from './pages/Contact';
 import ProjectDetails from './pages/Projects/ProjectDetails';
+import MBACapstone from './pages/Projects/MBACapstone';
+import PrimeFitDetail from './pages/Projects/PrimeFitDetail';
+import XboxMarcomDetail from './pages/Projects/XboxMarcomDetail';
+import HRGrievanceDetail from './pages/Projects/HRGrievanceDetail';
+import FinAIDetail from './pages/Projects/Finai';
 
 const AboutUs = lazy(() => import('./pages/About Us'));
 
@@ -49,7 +54,12 @@ export default function App() {
           <Route path="/myfounderera" element={<MyStartUp />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/project" element={<ProjectGrid />} />
-          <Route path="/project/:projectId" element={<ProjectDetails />} />
+          {/* <Route path="/project/:projectId" element={<ProjectDetails />} /> */}
+          <Route path="/project/mba" element={<MBACapstone />} />
+          <Route path="/project/prime" element={<PrimeFitDetail />} />
+          <Route path="/project/xbox" element={<XboxMarcomDetail />} />
+          <Route path="/project/hr-grievance" element={<HRGrievanceDetail />} />
+             <Route path="/project/fin-ai" element={<FinAIDetail/>} />
           <Route path="/contact" element={
             <Contact scrollToFooter={handleScrollToFooter} />
           } />

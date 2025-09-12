@@ -47,7 +47,7 @@ const ProjectGrid = () => {
               </ul>
 
               <div className="flex flex-wrap gap-3 pt-2">
-                {proj.links.map((link, i) => (
+                {proj.links?.map((link, i) => (
                   <a
                     key={i}
                     href={link.href}
@@ -70,29 +70,28 @@ const ProjectGrid = () => {
                         <Globe className="w-3.5 h-3.5 text-purple-600" />
                         {link.label}
                       </>
-                    )
-                      : link.label.includes("Prototype") ? (
-                        <>
-                          <Globe className="w-3.5 h-3.5 text-purple-600" />
-                          {link.label}
-                        </>
-                      ) : (
-                        <>
-                          <Github className="w-3.5 h-3.5 text-gray-800" />
-                          {link.label}
-                        </>
-                      )
-                    }
+                    ) : link.label.includes("Prototype") ? (
+                      <>
+                        <Globe className="w-3.5 h-3.5 text-purple-600" />
+                        {link.label}
+                      </>
+                    ) : (
+                      <>
+                        {/* <Github className="w-3.5 h-3.5 text-gray-800" /> */}
+                        {link.label}
+                      </>
+                    )}
                   </a>
                 ))}
 
+
                 {/* Add View More button */}
-                <Link
+                {/* <Link
                   to={`/project/${proj.id}`}
                   className="flex items-center gap-2 text-sm px-3 py-1.5 rounded-full border border-gray-200 hover:bg-gray-100 transition-colors"
                 >
                   View Details
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
