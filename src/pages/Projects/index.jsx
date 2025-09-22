@@ -1,7 +1,11 @@
 import React from "react";
-import { Instagram, Github, Globe, Figma } from "lucide-react";
+import { Instagram, Github, Globe, Figma, SquareArrowOutUpRight , } from "lucide-react";
 import { Link } from "react-router-dom";
 import { projectData } from "../../Data/ProjectsData";
+import Lovable from "../../assets/Projects/lovable.png";
+import Drive from "../../assets/Projects/google-drive.png";
+import Medium from "../../assets/Projects/medium.png";
+
 
 const ProjectGrid = () => {
   return (
@@ -55,44 +59,63 @@ const ProjectGrid = () => {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-sm px-3 py-1.5 rounded-full border border-gray-200 hover:bg-gray-100 transition-colors"
                   >
-                    {link.label.includes("@") ? (
+                    {link.label.includes("@") && (
                       <>
                         <Instagram className="w-3.5 h-3.5 text-pink-600" />
                         {link.label}
                       </>
-                    ) : link.label.includes("Figma") ? (
+                    )}
+
+                    {link.label.includes("Figma") && (
                       <>
                         <Figma className="w-3.5 h-3.5 text-purple-600" />
                         {link.label}
                       </>
-                    ) : link.label.includes("Whiffs") ? (
+                    )}
+
+                    {link.label.includes("Whiffs") && (
                       <>
                         <Globe className="w-3.5 h-3.5 text-purple-600" />
                         {link.label}
                       </>
-                    ) : link.label.includes("Prototype") ? (
+                    )}
+
+                    {link.label.includes("Deliverables") && (
                       <>
-                        <Globe className="w-3.5 h-3.5 text-purple-600" />
+                        <img src={Lovable} alt="Lovable" className="w-4 h-4" />
+                          {link.label}
+                      </>
+                    )}
+
+                    {link.label.includes("Study") && (
+                      <>
+                        <img src={Medium} alt="Medium" className="w-4 h-4" />
+  {link.label}
+                      </>
+                    )}
+                    {link?.label2?.includes("See") && (
+                      <>
+                        <img src={Drive} alt="Medium" className="w-4 h-4" />
                         {link.label}
                       </>
-                    ) : (
+                    )}
+
+                    {link.label.includes("GitHub") && (
                       <>
-                        {/* <Github className="w-3.5 h-3.5 text-gray-800" /> */}
+                        <Github className="w-3.5 h-3.5 text-gray-800" />
+                        {link.label}
+                      </>
+                    )}
+                     {link.label.includes("View Detail") && (
+                      <>
+                        <SquareArrowOutUpRight  className="w-3.5 h-3.5 text-gray-800" />
                         {link.label}
                       </>
                     )}
                   </a>
                 ))}
-
-
-                {/* Add View More button */}
-                {/* <Link
-                  to={`/project/${proj.id}`}
-                  className="flex items-center gap-2 text-sm px-3 py-1.5 rounded-full border border-gray-200 hover:bg-gray-100 transition-colors"
-                >
-                  View Details
-                </Link> */}
               </div>
+
             </div>
           </div>
         ))}

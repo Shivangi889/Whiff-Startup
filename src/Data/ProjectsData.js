@@ -29,7 +29,7 @@ export const projectData = [
       }
     ]
   },
- 
+
   {
     id: "mba-capstone",
     title: "MBA Capstone Digital Transformation Consulting Project",
@@ -41,16 +41,13 @@ export const projectData = [
       "Delivered actionable recommendations through client presentations and 16-page strategic report addressing manual process inefficiencies"
     ],
     links: [
-      {
-        href: "https://www.figma.com/proto/i2Ij4my7gPzO3AgIUVT5HE/FIN-Ai-Mockup",
-        label: "Figma Prototype"
-      },
+
       {
         href: "https://github.com/bhatia-pooja/campus-catering-digital-transformation",
         label: "GitHub"
       },
-       {
-        href:"/project/mba",
+      {
+        href: "/project/mba",
         label: "View Detail"
       }
 
@@ -144,7 +141,7 @@ export const projectData = [
       "Designed penetration pricing at $199 with multichannel distribution strategy spanning online retail, specialty stores, and B2B partnerships"
     ],
     links: [
-   
+
       {
         href: "https://github.com/bhatia-pooja/PrimeFit-Smartwatch-Marketing-Plan/tree/main",
         label: "GitHub"
@@ -222,18 +219,20 @@ export const projectData = [
     id: "xbox-marcom",
     "title": "Xbox \"This Is An Xbox\" – Marcom Strategy & Audit",
     "subtitle": "Deconstructing a Gaming Giant's Bold Repositioning Strategy",
-      image: xbox,
+    image: xbox,
     highlights: [
       "Developed comprehensive IMC strategy for Xbox's ecosystem expansion with strategic budget recommendations and 4-segment targeting framework for 2025 growth",
       "Created integrated brand positioning around \"Play without limits—anywhere, anytime\" with cross-platform messaging architecture and crisis management protocols",
       "Designed strategic implementation roadmap including esports partnerships, mobile gaming expansion, and community engagement initiatives"
     ],
-      links: [
-   
+    links: [
+
       {
         href: "https://drive.google.com/drive/folders/1OmSSW0m7yq0oItrUWuVNBK5kGtYrDnO_?usp=sharing",
-        label: "Interactive Prototype"
-      }, {
+        label: "See Drive",
+        label2: 'See '
+      },
+      {
         href: "/project/xbox",
         label: "View Detail"
       },
@@ -381,7 +380,7 @@ export const projectData = [
     id: "hr-grievance-system",
     "title": "AI-Powered HR Grievance Management System",
     "subtitle": "Transforming workplace conflict resolution through intelligent automation and anonymous reporting",
-     image: Hr,
+    image: Hr,
     highlights: [
       "Addressed $8.79B market opportunity through end-to-end product management from research to live prototype with 3 intelligent automation agents",
       "Transformed workplace conflict resolution for 25% of employees experiencing annual workplace issues, delivering <2 minute case processing vs 2-4 hour manual baseline"
@@ -389,17 +388,17 @@ export const projectData = [
     links: [
       {
         href: "https://preview--grievance-management.lovable.app/",
-        label: "Interactive Prototype"
+        label: "View Deliverables"
       },
       {
         href: "https://github.com/yourusername/ai-grievance-management-system",
         label: "GitHub"
-      },{
-         href: "https://medium.com/@pbhat033/transforming-hr-grievance-management-with-ai-a-product-managers-journey-aa2418a5883b",
-        label: "Deep Dive"
+      }, {
+        href: "https://medium.com/@pbhat033/transforming-hr-grievance-management-with-ai-a-product-managers-journey-aa2418a5883b",
+        label: "View Case Study"
       },
       {
-         href: "/project/hr-grievance",
+        href: "/project/hr-grievance",
         label: "View Details"
       }
 
@@ -536,7 +535,7 @@ export const projectData = [
       }
     ]
   },
-   {
+  {
     id: "fin-ai",
     title: " FinAI – AI-Powered Financial Insights Tool",
     subtitle: "Helping everyday investors make sense of market noise.",
@@ -550,7 +549,7 @@ export const projectData = [
     links: [
       {
         href: "https://preview--finai-prototype.lovable.app/onboarding",
-        label: "Interactive Prototype"
+        label: "View Deliverables"
       },
       {
         href: "https://github.com/bhatia-pooja/pm-roadmap-finAI-financial-news-tool",
